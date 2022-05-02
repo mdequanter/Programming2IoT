@@ -17,13 +17,13 @@ void setup()
 }
 void loop() 
 {
+    // converteren(mappen) van analoge waarden van 0 tot 1023 naar een range van 0 tot 180 graden
     val1 = map(analogRead(0), 0, 1023, 0, 180);  
     val2 = map(analogRead(1), 0, 1023, 0, 180);  
     val3 = map(analogRead(2), 0, 1023, 0, 180);  
     val4 = map(analogRead(3), 0, 1023, 0, 180);
     val5 = map(analogRead(6), 0, 1023, 35, 90);
-    Serial.print("A0:");
-    Serial.println(val1);
+    Serial.print("A0:");Serial.println(val1);
     Serial.print("A1:");Serial.println(val2);
     Serial.print("A2:");Serial.println(val3);
     Serial.print("A3:");Serial.println(val4);
