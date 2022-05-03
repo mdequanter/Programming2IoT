@@ -67,6 +67,8 @@ void setup() {
 * Functie om op een degelijke snelheid van de ene (pos1) naar de ander positie(pos2) te gaan
 * Hierbij geven we steeds een servo object mee, zodat we dezelfde functie kunnen gebruiken voor alle servo's
 * Wanneer pos1 == pos2 werd de itteratie afgerond en pas dan is return = true.
+* We geven steeds aan de functie servoPos ook de huidige pos1 en pos2 mee zodat we steeds weten waar er op de button werd gedrukt.
+* Zo sprongen we niet naar de beginpositie, maar gaat het bewegen van de servo's gewoon verder.
 */
 
 bool servoPos(Servo servo, int pos1, int pos2) {
@@ -94,7 +96,10 @@ bool servoPos(Servo servo, int pos1, int pos2) {
     return true;
   }
 }
-
+/*
+ * Wanneer er op de button wordt gedrukt wordt globale boolean programmaIsRunning geswitch. Zo kunnen we starten en stoppen.
+ * In het programma wordt gekeken of programmaIsRunning op true staat, zoja, dan gaat het prgramma verder.
+ */
 void buttonPressed(int buttonPin) {
   if(digitalRead(buttonPin)==LOW){
     delay(500);
