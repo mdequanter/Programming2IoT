@@ -1,5 +1,5 @@
 /***********************************************************
-Description: Optimalisate van code gebruik van functies, verschillende servo posities na elkaar om een object te verplaatsen.
+Description: Gebruik van arrays en opslagen van de analoge input in een array
 Author: Maarten Dequanter
 Date: 02/05/2022
 ***********************************************************/
