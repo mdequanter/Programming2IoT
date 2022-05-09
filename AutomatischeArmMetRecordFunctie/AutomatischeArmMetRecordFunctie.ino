@@ -86,10 +86,6 @@ void setup() {
   int servo4Pos = servo4.read();
   int servo5Pos = servo5.read();
 
-
-  
-
-  
   
   display.begin(SSD1306_SWITCHCAPVCC, 0x3C);
   display.setTextColor(WHITE);//Sets the font display color
