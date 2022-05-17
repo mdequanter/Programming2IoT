@@ -23,7 +23,7 @@ void setup()
   Serial.println("*********************");
   
   
-  Serial.print("Integer lijst adressen :");
+  Serial.print("Double lijst adressen :");
   
   for (int i = 0; i<=9; i++) {
     lijstDouble[i] = 2;
